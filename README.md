@@ -28,5 +28,5 @@ https://drive.google.com/file/d/1XZowMEQ7k63A5sRl4U7pgPwg_ZfIq2uf/view?usp=shari
 遊戲內有精美校園地圖，還有許多關於學校的對話，讓學妹們能從劇情中得知雄女的一切。<br>
 因為怕只有對話會很尷尬，所以我們加了課後的探險，請務必不要錯過喔!!<br>
 ## License
-MIT License. See more in [LICENSE](https://github.com/Today-Asked/KGHS-RPG-game/blob/main/LICENSE.txt).<br>
+MIT License. See more in [LICENSE](https://github.com/Today-Asked/KGHS-RPG-game/blob/main/LICENSE).<br>
 2021 © corn syrup, meow0w0, wen
