@@ -1,5 +1,4 @@
 # 開學日
-(載點請往下滑)<br>
 **年度必玩經典大作 耗時一年終於上線!!!**<br>
 劇情向解謎遊戲，跟著遊戲主角在雄女校園內探索吧!
 ![主畫面](https://user-images.githubusercontent.com/63833544/151654791-caa21765-3ae0-4af6-af47-2e4f93edb7ee.jpg)
@@ -29,5 +28,5 @@ https://drive.google.com/file/d/1XZowMEQ7k63A5sRl4U7pgPwg_ZfIq2uf/view?usp=shari
 遊戲內有精美校園地圖，還有許多關於學校的對話，讓學妹們能從劇情中得知雄女的一切。<br>
 因為怕只有對話會很尷尬，所以我們加了課後的探險，請務必不要錯過喔!!<br>
 ## License
-MIT License. See more in [license](LICENSE.txt).<br>
+MIT License. See more in [LICENSE](LICENSE.txt).<br>
 2021 © corn syrup, meow0w0, wen
