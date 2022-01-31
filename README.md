@@ -29,4 +29,4 @@ https://drive.google.com/file/d/1XZowMEQ7k63A5sRl4U7pgPwg_ZfIq2uf/view?usp=shari
 因為怕只有對話會很尷尬，所以我們加了課後的探險，請務必不要錯過喔!!<br>
 ## License
 MIT License. See more in [LICENSE](https://github.com/Today-Asked/KGHS-RPG-game/blob/main/LICENSE).<br>
-2021 © corn syrup, meow0w0, wen
+© 2021 蜥蜴學姊的廢棄碎片
