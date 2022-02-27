@@ -2,7 +2,6 @@
 **年度必玩經典大作 耗時一年終於上線!!!**<br>
 劇情向解謎遊戲，跟著遊戲主角在雄女校園內探索吧!
 ![主畫面](https://user-images.githubusercontent.com/63833544/151654791-caa21765-3ae0-4af6-af47-2e4f93edb7ee.jpg)
-<iframe width="853" height="480" src="https://www.youtube.com/embed/fT7dlflY_XE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 (為什麼我要寫得像年度暢銷遊戲一樣)
 
 ## 劇情簡介
