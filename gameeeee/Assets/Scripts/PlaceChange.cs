@@ -38,17 +38,17 @@ public class PlaceChange : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collider)
     {        
         
-        if(collider.gameObject.transform.parent.name == "transform") ChangeScene(collider.gameObject);
+        if(collider.gameObject.transform.parent.name == "transform") ChangeScene(collider.gameObject);//移動
         if(collider.gameObject.name == "scene1"){
             sceneControl.OnStartGame("scene1");
         }
-        if(Here.name == "banyan" || Here.name == "garden")  underTree.SetActive(true);
+        if(Here.name == "banyan" || Here.name == "center" || Here.name == "garden")  underTree.SetActive(true);
         else underTree.SetActive(false);
     }
     public void ChangeScene(GameObject gameObject){
         
         ChangePlace = scene.Find(x => x.name == gameObject.name);
-        Debug.Log(ChangePlace); 
+        //Debug.Log(ChangePlace); 
         Vector2 position = new Vector2(0, 0);       
         if(ChangePlace != Here){
             move.enabled = false;

@@ -130,25 +130,6 @@ public class move : MonoBehaviour
         
         PlayerRigid.velocity = new Vector2(0, 0);
         //Debug.Log("撞到" +  collision.gameObject.name + "了");
-        /*if (collision.gameObject.tag == "CantGo"){
-            words = '1';
-            }
-        if (collision.gameObject.tag == "room"){
-            words = '1';
-            }
-        if (collision.gameObject.tag == "list1"){
-            words = 'a';
-            }
-        if (collision.gameObject.tag == "list2"){
-            words = 'b';
-            }
-        if (collision.gameObject.tag == "list3"){
-            words = 'c';
-            }
-        if (collision.gameObject.tag == "list4"){
-            words = 'd';
-            }
-            */
     }
 
     

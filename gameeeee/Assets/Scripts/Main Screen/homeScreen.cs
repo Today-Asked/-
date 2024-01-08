@@ -9,6 +9,7 @@ public class homeScreen : MonoBehaviour
     public GameObject finish;
     public GameApplication application;
     public changeScene changeScene;
+    public chooseNo chooseNo;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +32,8 @@ public class homeScreen : MonoBehaviour
     }
     public void gameStart(){
         changeScene.CanChangeScene = 1; //切換到scene 0
+        chooseNo.panalNo = 1; //
+
     }
     public void announcement(){
         Menu.SetActive(true);

@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - bed
+  - Sprite
+  - cantGo
+  - left
+  - right
+  - invalid
+  - aisle
+  - up
+  - treasure
+  - front
+  - back
   layers:
   - Default
   - TransparentFX
@@ -13,11 +24,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - background
+  - interactive
+  - player
+  - UI renderer
+  - background_covered
   - 
   - 
   - 
@@ -44,6 +55,12 @@ TagManager:
   - name: "\u80CC\u666F"
     uniqueID: 1361319469
     locked: 0
+  - name: "\u9053\u5177 to pick"
+    uniqueID: 4264881333
+    locked: 0
   - name: "\u89D2\u8272"
     uniqueID: 4211596437
+    locked: 0
+  - name: "\u9053\u5177 in \u9053\u5177\u6B04"
+    uniqueID: 1227537125
     locked: 0

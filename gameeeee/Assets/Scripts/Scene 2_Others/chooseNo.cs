@@ -80,7 +80,7 @@ public class chooseNo : MonoBehaviour
                 textIndex++;
             }
             if (textCounting > textcount){
-                panalNo = 0;
+                panalNo = 0; //結束 No 的 panel
                 test2.panalclose = 0;
                 GetComponent<CanvasGroup>().alpha = 0;
                 GetComponent<CanvasGroup>().interactable = false;

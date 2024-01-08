@@ -81,7 +81,8 @@ namespace RemptyTool.ES_MessageSystem
         private IEnumerator CmdFun_w_Task()
         {
             IsOnCmdEvent = true;
-            IsWaitingForNextToGo = true;
+            
+            
             yield return new WaitUntil(() => IsWaitingForNextToGo == false);
             msgText = "";   //Erase the messages.
             IsOnCmdEvent = false;
@@ -138,10 +139,12 @@ namespace RemptyTool.ES_MessageSystem
             }
             return SpecialCharType.NormalChar;
         }
+        public bool ForCompleted;
         private IEnumerator SetTextTask(string _text)
         {
             IsOnSpecialChar = false;
             IsMsgCompleted = false;
+            ForCompleted = false;
             specialCmd = "";
             for (int i = 0; i < _text.Length; i++)
             {
@@ -155,8 +158,10 @@ namespace RemptyTool.ES_MessageSystem
                 }
                 lastChar = _text[i];
                 yield return new WaitUntil(() => IsOnCmdEvent == false);
+                if (i == _text.Length - 1){IsMsgCompleted = true;Debug.Log("Im completed~");}
             }
-            IsMsgCompleted = true;
+            //ForCompleted = true;
+            //IsMsgCompleted = true;
             yield return null;
         }
         #endregion

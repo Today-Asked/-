@@ -40,6 +40,10 @@ public class test2 : MonoBehaviour
     private List<string> textList = new List<string>(); //用list存文件裡的文字
     private int textIndex = 0; //存 到哪一句話
     public static int panalclose = 0;
+    /* 
+    1 => open "no"
+    2 => open "yes"
+    */
     public GameObject Menu; //[要尋寶嗎?]選擇
 
 /*
@@ -156,8 +160,11 @@ public class test2 : MonoBehaviour
             msgSys.SetText(textList[textIndex]);
             textIndex++;
         }
-        if(game){
-            clickYes();
+        if(game)
+        {
+            GetComponent<CanvasGroup>().alpha = 0;
+            GetComponent<CanvasGroup>().interactable = false;
+            GetComponent<CanvasGroup>().blocksRaycasts = false;
         }
 
     }

@@ -38,8 +38,9 @@ public class talk : MonoBehaviour
             GetComponent<CanvasGroup>().interactable = true;
             GetComponent<CanvasGroup>().blocksRaycasts = true;
             move.enabled = false;
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && msgSys.IsCompleted == true)
             {
+                Debug.Log("hi");
                 msgSys.Next();
                 GetComponent<CanvasGroup>().alpha = 0;
                 GetComponent<CanvasGroup>().interactable = false;
@@ -52,14 +53,11 @@ public class talk : MonoBehaviour
             //If the message is complete, stop updating text.
             if (msgSys.IsCompleted == false)
             {
+                Debug.Log("hi2");
+                Debug.Log(msgSys.IsCompleted);
                 uiText.text = msgSys.text;
             }
 
-            //Auto update from textList.
-            if (msgSys.IsCompleted == true ) //__.Count :算長度
-            {
-                Talking(gameObject);
-            }
         }
     }
     string cantGo;

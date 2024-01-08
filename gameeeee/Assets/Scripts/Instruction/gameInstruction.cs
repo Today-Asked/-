@@ -19,6 +19,7 @@ public class gameInstruction : MonoBehaviour
     public Sprite image0;
     public Sprite image1;
     public Sprite image2;
+    public GameObject toolbar, map;
 
     private List<string> textList = new List<string>(); //用list存文件裡的文字
     private int textIndex = 0; //储存說到哪一句話
@@ -40,6 +41,8 @@ public class gameInstruction : MonoBehaviour
         else ReadTextDataFromAsset(textAsset);
 
         GameObject.Find("player").GetComponent<move>().enabled = false;
+        toolbar.SetActive(false);
+        map.SetActive(false);
 
         //add special chars(關鍵字)and functions in other component.
         msgSys.AddSpecialCharToFuncMap("close", closePanel);
@@ -52,11 +55,13 @@ public class gameInstruction : MonoBehaviour
     private void input1(){mImage.sprite = image1;}
     private void input2(){mImage.sprite = image2;}
     private void input0(){mImage.sprite = image0;}
-    private void closePanel(){
+    public void closePanel(){
         GetComponent<CanvasGroup>().alpha = 0;
         GetComponent<CanvasGroup>().interactable = false;
         GetComponent<CanvasGroup>().blocksRaycasts = false;
         GameObject.Find("player").GetComponent<move>().enabled = true;
+        toolbar.SetActive(true);
+        map.SetActive(true);
     }
 
     private void ReadTextDataFromAsset(TextAsset _textAsset) //把文字傳進 list

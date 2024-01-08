@@ -100,13 +100,15 @@ public class after : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (chooseNo.panalNo == 0 || game){
+        if (chooseNo.panalNo == 0 || game){ //從 No 那裏來(no 的 panel 關起來了) or 探險回來
             if(Fade.activeSelf){
                 Fade.GetComponent<Animation>().Play("淡入");
                 Fade.SetActive(false);
             }
             Canvas.SetActive(false);
-            chooseYes.SetActive(false);
+            chooseYes.GetComponent<CanvasGroup>().alpha = 0;
+            chooseYes.GetComponent<CanvasGroup>().interactable = false;
+            chooseYes.GetComponent<CanvasGroup>().blocksRaycasts = false;
             //backgroundStart.sprite = image0;
             GetComponent<CanvasGroup>().alpha = 1;
             GetComponent<CanvasGroup>().interactable = true;
